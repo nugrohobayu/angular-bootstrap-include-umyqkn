@@ -1,0 +1,47 @@
+<div class="contentAllCards">
+  <div class="subject">
+    <div class="title">
+      <h1>Videos</h1>
+    </div>
+    <div class="feature">
+      <a href=""> Browse all videos </a>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div
+      class="bigCard"
+      style="
+      background-image: url(https://images.unsplash.com/photo-1551632811-561732d1e306?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGlraW5nfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+    "
+    >
+      <div class="fileInfo">
+        <div class="fileTitle">Hiking Alone</div>
+        <div class="uploader">Gunung Slamet</div>
+      </div>
+
+      <div class="view">128k views</div>
+    </div>
+
+    <div
+      class="card1"
+      style="
+      background-image: url(https://images.unsplash.com/photo-1551632811-561732d1e306?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGlraW5nfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+    "
+      *ngFor="let content of dataVideo"
+    >
+      <div class="cardContainer">
+        <div class="uploader">{{ content.name | lowercase }}</div>
+        <div class="view">{{ content.views | number }} views</div>
+      </div>
+    </div>
+
+    <div class="uploadCard">
+      <button class="uploadButton">
+        <span class="uploadLogo"><i class="fa fa-upload"></i></span>
+        <p style="text-align: justify-content">Upload your own video</p>
+        <input type="file" id="myfile" style="display: none" />
+      </button>
+    </div>
+  </div>
+</div>

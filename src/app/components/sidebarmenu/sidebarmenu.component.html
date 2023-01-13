@@ -1,0 +1,70 @@
+<div class="sidebar">
+  <div class="subject">
+    <div class="title">
+      <h1>Activity</h1>
+    </div>
+    <div class="feature">
+      <a href=""> View timeline </a>
+    </div>
+  </div>
+  <hr />
+
+  <div class="contents" *ngFor="let activity of items | slice: 0:6">
+    <div class="content">
+      <div class="buttonClose"></div>
+      <div
+        class="material"
+        style="background-image: url({{ activity.image }});"
+      ></div>
+      <div class="article">
+        <div class="mainActivity">
+          <p class="Username">
+            <b>{{ activity.name }}</b>
+          </p>
+          <p class="doingSomething">{{ activity.viewrs }}</p>
+        </div>
+        <p class="Comment">title</p>
+        <div class="timeline">
+          <span class="timeLogo material-icons">
+            <i class="{{ activity.logo }}"></i>
+          </span>
+          <p>{{ activity.time }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="btnClose">
+      <button class="xClose" (click)="Close()">
+        <img src="../../../assets/icon/xclose.png" width="180" alt="" />
+      </button>
+    </div>
+  </div>
+  <hr />
+</div>
+
+<div class="sidebarBottom">
+  <div class="subject">
+    <div class="title">
+      <h1>Channels</h1>
+    </div>
+    <div class="feature">
+      <a href=""> Browse all channels </a>
+    </div>
+  </div>
+  <hr />
+
+  <div class="contentsBottom">
+    <div
+      class="contentBottom"
+      style="background-image: url({{ channel.image }});"
+      *ngFor="let channel of items | slice: 0:10"
+    >
+      <div class="plusLogo"></div>
+      <h3>{{ channel.name }}</h3>
+      <div class="addButton">
+        <img src="../../../assets/icon/add.png" width="180" alt="" />
+        <input type="file" style="display: none" />
+      </div>
+    </div>
+  </div>
+  <hr />
+</div>

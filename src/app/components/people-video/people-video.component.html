@@ -1,0 +1,43 @@
+<div class="contentAllCards">
+  <div class="subject">
+    <div class="title">
+      <h1>People</h1>
+    </div>
+    <div class="feature">
+      <a href=""> View all </a>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div
+      class="bigCard"
+      style="background-image: url(https://www.nps.gov/glac/planyourvisit/images/hiking-with-ranger-2to1.jpg);"
+    >
+      <div class="fileInfo">
+        <div class="fileTitle">Hiking Together</div>
+        <div class="uploader">Gunung Cimarinjung</div>
+      </div>
+
+      <div class="view">128k views</div>
+    </div>
+
+    <div
+      class="card1"
+      style="background-image: url('https://linisehat.com/wp-content/uploads/2020/12/hiking.jpg');"
+      *ngFor="let content of dataVideo"
+    >
+      <div class="cardContainer">
+        <div class="uploader">{{ content.name | lowercase }}</div>
+        <div class="view">{{ content.views | number }} views</div>
+      </div>
+    </div>
+
+    <div class="uploadCard">
+      <button class="uploadButton">
+        <span class="uploadLogo"><i class="fa fa-upload"></i></span>
+        <p>Upload your own video</p>
+        <input type="file" id="myfile" style="display: none;" name="myfile" />
+      </button>
+    </div>
+  </div>
+</div>
