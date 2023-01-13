@@ -4,7 +4,7 @@
       <h1>Videos</h1>
     </div>
     <div class="feature">
-      <a href=""> Browse all videos </a>
+      <a href="#"> Browse all videos </a>
     </div>
   </div>
 
@@ -16,23 +16,23 @@
     "
     >
       <div class="fileInfo">
-        <div class="fileTitle">Hiking Alone</div>
-        <div class="uploader">Gunung Slamet</div>
+        <div class="fileTitle">Hiking alone in slamet mountain</div>
+        <div class="uploader">Waseem Arshad</div>
       </div>
 
-      <div class="view">128k views</div>
+      <div class="view">258k views</div>
     </div>
 
     <div
       class="card1"
       style="
-      background-image: url(https://images.unsplash.com/photo-1551632811-561732d1e306?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGlraW5nfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+      background-image: url(https://lifeexperiencedegreepros.com/wp-content/uploads/2019/01/Best-Holidays-For-Families-in-Africa.jpg);
     "
       *ngFor="let content of dataVideo"
     >
       <div class="cardContainer">
-        <div class="uploader">{{ content.name | lowercase }}</div>
-        <div class="view">{{ content.views | number }} views</div>
+        <div class="uploader">{{ content.name }}</div>
+        <div class="view">{{ content.viewrs | number }} views</div>
       </div>
     </div>
 

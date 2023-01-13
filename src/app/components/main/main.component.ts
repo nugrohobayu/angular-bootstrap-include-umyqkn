@@ -21,9 +21,7 @@ export class MainComponent implements OnInit {
 
   dataApi() {
     this.apiService.getDataApi().subscribe((data: any) => {
-      let coba = data,
-        length = 7;
-      this.dataVideo = Array.prototype.slice.call(coba, 3);
+      this.dataVideo = data;
     });
   }
 

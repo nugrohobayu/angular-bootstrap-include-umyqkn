@@ -9,7 +9,8 @@ header {
   padding: 50px 11% 10px 11%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
 }
 
 .topNav {
@@ -19,7 +20,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .topNav a {

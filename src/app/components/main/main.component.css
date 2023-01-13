@@ -1,6 +1,5 @@
 .contentAllCards {
   width: 40rem;
-
   position: relative;
   margin-bottom: 4em;
   border-radius: 2px;
@@ -18,10 +17,6 @@
   font-size: 0.8em;
   text-decoration: none;
   color: #f4e3cf;
-}
-
-.feature a:hover {
-  color: #aa9b8a00;
 }
 
 .title h1 {
@@ -93,7 +88,6 @@
 .uploader {
   font-size: 0.8rem;
   color: #f4e3cf;
-  background: none;
 }
 
 .view {
@@ -101,7 +95,6 @@
   color: #f4e3cf;
   align-self: flex-end;
   position: relative;
-  background: none;
   background-color: rgba(27, 27, 27, 0.5);
 }
 

@@ -5,7 +5,7 @@ interface Item {
   id: number;
   name: string;
   image: string;
-  viewrs: number;
+  status: string;
   logo: string;
   addedToCart: boolean;
   desc: string;
@@ -24,7 +24,7 @@ export class SidebarmenuComponent implements OnInit {
       id: 1,
       name: 'Kokorowatari',
       image: 'https://linisehat.com/wp-content/uploads/2020/12/hiking.jpg',
-      viewrs: 444,
+      status: 'commented',
       addedToCart: false,
       logo: `fa fa-video-camera`,
       time: '44 minutes ago',
@@ -37,7 +37,7 @@ export class SidebarmenuComponent implements OnInit {
       name: 'Star Platinum',
       image:
         'https://lifeexperiencedegreepros.com/wp-content/uploads/2019/01/Best-Holidays-For-Families-in-Africa.jpg',
-      viewrs: 555,
+      status: 'new video',
       addedToCart: false,
       logo: 'fa fa-lock',
       time: '44 minutes ago',
@@ -49,7 +49,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 3,
       name: '3D Maneuver Gear',
-      viewrs: 200,
+      status: 'commented',
       addedToCart: false,
       logo: 'fa fa-comment',
       time: '44 minutes ago',
@@ -62,7 +62,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 4,
       name: 'Excalibur',
-      viewrs: 300,
+      status: 'commented',
       addedToCart: false,
       logo: 'fa fa fa-heart',
       time: '44 minutes ago',
@@ -75,7 +75,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 5,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'new video',
       addedToCart: false,
       logo: 'fa fa-video-camera',
       time: '44 minutes ago',
@@ -88,7 +88,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 6,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: 'fa fa-video-camera',
       time: '44 minutes ago',
@@ -101,7 +101,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 7,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'new video',
       addedToCart: false,
       logo: 'fa fa-video-camera',
       time: '44 minutes ago',
@@ -114,7 +114,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 8,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: 'fa fa-love',
       time: '44 minutes ago',
@@ -127,7 +127,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 9,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',
@@ -140,7 +140,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 10,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',
@@ -153,7 +153,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 11,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'new video',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',
@@ -166,7 +166,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 12,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',
@@ -179,7 +179,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 14,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',
@@ -192,7 +192,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 15,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',
@@ -205,7 +205,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 16,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',
@@ -218,7 +218,7 @@ export class SidebarmenuComponent implements OnInit {
     {
       id: 17,
       name: 'Dragon Slayer',
-      viewrs: 450,
+      status: 'commented',
       addedToCart: false,
       logo: '',
       time: '44 minutes ago',

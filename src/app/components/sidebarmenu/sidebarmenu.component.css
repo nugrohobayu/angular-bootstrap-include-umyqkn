@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  width: 100%;
+  width: 116%;
 }
 
 .feature a {
@@ -56,10 +56,6 @@
   background: transparent;
 }
 
-.feature a:hover {
-  color: #aa9b8a00;
-}
-
 .title h1 {
   font-size: 1.5em;
   color: #f4e3cf;
@@ -68,6 +64,7 @@
 .sidebar hr {
   margin-top: 0;
   border-bottom: 3px solid #f4e3cf;
+  width: 116%;
 }
 
 .contents {

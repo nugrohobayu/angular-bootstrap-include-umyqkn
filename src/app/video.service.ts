@@ -13,8 +13,6 @@ export class VideoService {
   }
 
   public getDataApi(): Observable<Api[]> {
-    return this.http
-      .get<Api[]>(`https://radiant-bayou-53976.herokuapp.com/video`)
-      .pipe(map(this.datanya));
+    return this.http.get<Api[]>(`http://localhost:3000/videos`);
   }
 }
