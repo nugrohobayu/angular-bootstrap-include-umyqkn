@@ -14,6 +14,7 @@ import { SidebarmenuComponent } from './components/sidebarmenu/sidebarmenu.compo
 import { VideoService } from './video.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { VideosComponent } from './components/videos/videos.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
@@ -27,6 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
     MainComponent,
     PeopleVideoComponent,
     SidebarmenuComponent,
+    VideosComponent,
   ],
   providers: [VideoService],
   bootstrap: [AppComponent],
